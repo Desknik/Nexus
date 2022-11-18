@@ -1,0 +1,119 @@
+#destaques{
+    text-align: center
+}
+
+#destaques .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  
+}
+
+#destaques h2{
+    color: #ffffff;
+}
+
+#destaques .tittle:after{
+    content: '';
+    width: 100%;
+    max-width: 80px;
+    height: 7px;
+    background: #FF9A00;
+    display: inline-block;
+    margin: 0px 0 100px;
+    }
+
+
+#destaques p{
+    color: #ffffff; 
+    font-size: 16px;
+}
+
+
+#destaques .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba( 0, 0, 0, 0.02);
+    margin: 15px 30px;
+    transition: 0.2 ease;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(80, 80, 80);
+    
+}
+
+#destaques .pro .zoom{
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+#destaques .pro:hover {
+    box-shadow: 20px 20px 30px rgb(0, 0, 0);
+}
+
+#destaques .pro img{
+  
+    width: 100%;
+    transition: transform 0.3s;
+    border-radius: 20px;
+
+}
+
+#destaques .pro:hover img{
+    transform: scale(1.1);
+
+}
+
+
+
+#destaques .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#destaques .pro .des span {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#destaques .pro .des h5 {
+    padding-top: 7px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#destaques .pro .des i{
+    font-size: 12px;
+    color: rgb (243, 181, 25);
+}
+
+#destaques .pro .des h4{
+    padding-top: 7px;
+    color: #ffffff;
+    font-size:15px;
+    font-weight: 700;
+}
+
+#destaques .pro .des .star {
+    color: #ffa600;
+}
+
+#destaques .pro .cart {
+    width: 40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    font-weight: 500;
+    color:rgb(80, 80, 80);
+    border: 1px solid #000000;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2? family= Spartan:wght@100;200;300;400;500;600;700;800;900 & display=swap');
+
+#banner{
+    
+    background-image: url("../img/My_folder/Banner/Banner-1.png");
+    font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    height: 45vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+#banner h4 {
+    padding-bottom: 5px;
+    color: white;
+    font-size:20px;  
+    margin: 3px; 
+}
+
+
+#banner b{
+    color: #F49810;
+}
+
+#banner h2 {
+    color: white;
+    font-size:40px;
+    padding-bottom: 3px;
+
+}
+
+#banner a{
+    margin-top: 10px;
+    padding-left: 170px;
+}
+
+#banner a img{
+    width: 110%;
+    height: 110%;
+    transition: all 0.3s;
+}
+
+#banner a img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow( 5px 5px 10px #F49810);
+}
+
+
+#banner button{
+    background-image: url(../img/My_folder/butão.png);
+    background-color: transparent;
+    color: #FF9A00;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 2;
+}
+
+#banner button a{
+    text-decoration: none;
+    color: white;
+}

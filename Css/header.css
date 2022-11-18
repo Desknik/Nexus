@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2? family= Spartan:wght@100;200;300;400;500;600;700;800;900 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(https://cdn.dooca.store/1841/files/bg-novo.jpg?v=1609265024);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30px;
+    background-color: #181a21;
+    overflow-x:hidden;
+    
+}
+
+#header .header{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #181a21;
+    padding: 20px;
+    border-bottom: 2px solid rgb(41, 44, 54);
+    z-index: 999;
+    box-shadow: 3px 3px 10px #ff9900;
+
+}
+
+#header .header ul{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#header .header img{
+   height: 60px ;
+}
+
+#header .header img:hover{
+    cursor: pointer;
+    filter: drop-shadow(2px -2px 5px #ac6802 );
+ }
+
+#header .header .cards{
+    list-style: none;
+}
+
+
+#header .header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+#header .header .pro{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header .navbar {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    background-color: #181a2170;
+}
+
+
+
+#header .navbar .list {
+    max-width: 58%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header .navbar .list .dep{
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+#header .navbar .list a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    white-space: nowrap;
+   
+
+}
+
+
+#header .navbar .list a:hover{
+    color: #FF9A00;
+    box-shadow: 0px 2px  #FF9A00; 
+}
+#header .navbar .list a.active{
+    color: #FF9A00;
+}
+
+/* Mobile button*/
+#header .navbar .mobile{
+    position: relative;
+    width: 50px;
+    height: 46px;
+    border: 3px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#header .navbar .mobile .bar{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background: #FF9A00;
+    margin: 6px 4px;
+    transition: .4s;
+    transform-origin: center ;
+}
+
+
+#header .navbar .list .dep{
+    background-color:#181a21c3 ;
+    cursor: pointer;}
+
+#header .navbar .list .dep:hover a {
+    color: #FF9A00;
+    box-shadow: 0 2px  #FF9A00;
+
+}
+
+
+
+/* Header Mobile*/
+
+/* Button */
+
+#header .navbar .mobile{
+   display: none;
+   position: absolute;
+   top: 15px;
+   right: 20px;
+  
+}
+
+#header .sidebar .mobile {
+    position: relative;
+    width: 50px;
+    height: 46px;
+    border: 3px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#header .sidebar .mobile .bar{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background: #FF9A00;
+    margin: 6px 4px;
+    transition: .4s;
+    transform-origin: center ;
+}
+/* NavBar*/
+.sidebar{
+    position: absolute;
+    top: 158px;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: #181a21c3;
+    z-index: 999;
+    transition: all 0.8s;
+    
+}
+
+
+
+
+#header .sidebar .menu  {
+    list-style: none;
+}
+
+
+#header .menu a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 15px 10px;
+    box-shadow: 0 0.5px #3c3c3c;
+    transition: all 0.3;
+  
+}
+
+#header .menu .active {
+    color:#FF9A00;
+}
+
+#header .menu a:hover {
+    background-color: #181a21c3;
+    box-shadow: 3px 3px 10px black;
+    color: #FF9A00;
+    border-left: 5px solid#FF9A00;
+   
+}
+
+/* media Querry*/
+
+@media (max-width: 1352px) {
+    #header .navbar  {
+        padding: 28px;
+    }
+
+    #header .navbar .list {
+        display: none;
+    }
+
+    #header .navbar .mobile{
+        display: block;
+        z-index: 999;
+    
+    }
+
+    .show-list .sidebar{
+    right: 0px;
+ 
+}
+ .show-list .mobile:hover .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+ }
+
+.show-list .mobile:hover .bar:nth-child(2){
+  opacity: 0;
+}
+.show-list .mobile:hover .bar:nth-child(3){
+    transform: rotate(45deg) translate(-7px, -5px);
+}
+} 
